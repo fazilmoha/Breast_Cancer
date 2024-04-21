@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Symptoms</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Medical Data Form</h2>
+    <form id="medical-form">
+        <label for="lump_mass">Lump/Mass:</label>
+        <select id="lump_mass" name="lump_mass">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="breast_changes">Breast Changes:</label>
+        <select id="breast_changes" name="breast_changes">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="skin_changes">Skin Changes:</label>
+        <select id="skin_changes" name="skin_changes">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="nipple_changes">Nipple Changes:</label>
+        <select id="nipple_changes" name="nipple_changes">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="breast_pain">Breast Pain:</label>
+        <select id="breast_pain" name="breast_pain">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="armpit_swelling">Armpit Swelling:</label>
+        <select id="armpit_swelling" name="armpit_swelling">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="texture_color_changes">Texture/Color Changes:</label>
+        <select id="texture_color_changes" name="texture_color_changes">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="nipple_discharge">Nipple Discharge:</label>
+        <select id="nipple_discharge" name="nipple_discharge">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="family_history">Family History:</label>
+        <select id="family_history" name="family_history">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br>
+
+        <button type="submit">Submit</button>
+        <div id="response-message"></div>
+        
+    </form>
+    
+    <button onclick="redirectToPage()">After CheckUp</button>
+
+        
+    <div class="container">
+        <label for="cityInput">Enter City:</label>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button type="submit" onclick="getHospitals()">Search</button>
+    </div>
+    <div id="hospitalList">
+        <!-- Hospital list will be displayed here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
