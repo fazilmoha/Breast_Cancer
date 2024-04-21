@@ -23,7 +23,7 @@ document.getElementById('medical-form').addEventListener('submit', function(even
     const jsonData = JSON.stringify(formData);
 
     // Send JSON data via POST request
-    fetch('http://localhost:5000/data', {
+    fetch('http://localhost:5000/basic_symptoms', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

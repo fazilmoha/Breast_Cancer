@@ -28,7 +28,7 @@ document.getElementById('dataForm').addEventListener('submit', function(event) {
     };
 
     // Send the JSON data to your Flask API using fetch
-    fetch('http://127.0.0.1:5000/model2', {
+    fetch('http://127.0.0.1:5000/diagnostic_value', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
